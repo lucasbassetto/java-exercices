@@ -22,5 +22,7 @@ public class BiggestNumber {
                 System.out.println("Invalid: " + numberStr + " isn't a integer number.");
             }
         }
+
+        System.out.println("The biggest number is: " + biggest);
     }
 }
