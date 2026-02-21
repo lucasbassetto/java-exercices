@@ -18,6 +18,7 @@ public class ExDiferencaEntreHoras {
         LocalTime horaFim1 = LocalTime.of(15,45);
 
         Duration duration1 = Duration.between(horaInicio1, horaFim1);
-        System.out.println("Duração entre " + horaInicio1 + " e " + horaFim1 + ": " + duration1.toHours() + " horas e " + duration1.toMinutesPart() + " minutos");
+        String resultado = String.format("Duração entre %s e %s: %d horas e %d minutos", horaInicio1, horaFim1, duration1.toHours(), duration1.toMinutesPart());
+        System.out.println(resultado);
     }
 }
