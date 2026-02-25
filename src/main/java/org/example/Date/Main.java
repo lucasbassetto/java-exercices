@@ -8,7 +8,7 @@ public class Main {
 
         //Use LocalDate.of quando você já tem os valores numéricos de ano, mês e dia separados (por exemplo, vindos de variáveis ou cálculos).
         LocalDate dataCompra = LocalDate.now();
-        LocalDate dataPrimeiraParcela = LocalDate.of(2026, 02, 10);
+        LocalDate dataPrimeiraParcela = LocalDate.of(2026, 2, 10);
         LocalDate dataSegundaParcela = dataPrimeiraParcela.plusDays(30);
 
         System.out.println("Data da compra: " + dataCompra);
@@ -49,6 +49,15 @@ public class Main {
         System.out.println("Diferença em dias: " + period.getDays());
 
 
+        String dataRecebidaDoFront = "25/02/2026";
 
+        // Define o formato esperado
+        DateTimeFormatter formatters = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        // Converte a String para LocalDate
+        LocalDate dataConvertida = LocalDate.parse(dataRecebidaDoFront, formatters);
+
+        System.out.println("\nData convertida: " + dataConvertida);
+        System.out.println("Data formatada: " + dataConvertida.format(formatters));
     }
 }
