@@ -7,12 +7,10 @@ public class ExCalculandoDataEntrega {
 
     public static void main(String[] args) {
 
-        LocalDate dataInicio = LocalDate.of(2026,3,15);
+        LocalDate dataInicio = LocalDate.now();
         LocalDate dataFim = dataInicio.plusDays(15);
-
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-
-
-        System.out.println("Data Entrega: " + dataFim.format(formatter));
+        String dataFormatada = dataFim.format(formatter);
+        System.out.println("Data Entrega: " + dataFormatada);
     }
 }
