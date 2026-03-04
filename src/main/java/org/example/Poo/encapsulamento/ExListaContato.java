@@ -1,4 +1,4 @@
-package org.example.Poo;
+package org.example.Poo.encapsulamento;
 
 import java.util.ArrayList;
 import java.util.List;
