@@ -15,7 +15,5 @@ public class ExRegistroNotas {
         System.out.println("Notas: " + disciplina.getNotas());
         System.out.println("Média: " + disciplina.calcularMedia());
         System.out.println("Notas validas: " + disciplina.getNotas().size());
-
-
     }
 }
